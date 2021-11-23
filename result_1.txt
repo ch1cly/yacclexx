@@ -1,0 +1,75 @@
+
+ for 	 varname	operatror= 	number 	1 	to 	number 	10 	step 	number 	1 	
+ command(read) 
+
+ command(execute) 
+
+ command(write) 
+
+ exit 
+
+ loop 	
+ endfor 
+
+ for 	 varname	operatror= 	number 	1 	to 	number 	103 	
+ command(read) 
+
+ command(execute) 
+
+ command(write) 
+
+ exit 
+
+ endfor 
+
+ for 	 varname	operatror= 	number 	1213 	to 	number 	1 	step 	operatror- 	number 	44 	
+ command(read) 
+
+ command(write) 
+
+ loop 	
+ endfor 
+
+ for 	 varname	operatror= 	number 	113 	to 	number 	321 	step 	number 	11 	
+ command(read) 
+
+ command(execute) 
+
+ loop 	
+ endfor 
+
+ for 	 varname	operatror= 	number 	3424 	to 	number 	432 	step 	operatror- 	number 	2 	
+ command(execute) 
+
+ next 
+
+ for 	 varname	operatror= 	number 	1 	to 	number 	350 	step 	number 	2 	
+ command(read) 
+
+ for 	 varname	operatror= 	number 	1434 	to 	number 	333 	step 	operatror- 	number 	14 	
+ command(execute) 
+
+ endfor 
+
+ command(write) 
+
+ endfor 
+
+ for 	 varname	operatror= 	number 	1 	to 	number 	350 	step 	number 	2 	
+ for 	 varname	operatror= 	number 	1 	to 	number 	3550 	
+ command(read) 
+
+ for 	 varname	operatror= 	number 	14 	to 	number 	333 	step 	number 	14 	
+ command(execute) 
+
+ exit 
+
+ loop 	
+ endfor 
+
+ command(write) 
+
+ next 
+
+ loop 	
+ endfor 

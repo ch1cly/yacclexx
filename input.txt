@@ -1,0 +1,69 @@
+For aaaaa = 1 to 10 step 1
+
+read
+execute
+write
+exit
+loop
+endfor
+
+
+write
+
+For a334 = 1 to 103
+
+read
+execute
+write
+exit
+
+endfor
+
+fOr aa3aa = 1213 to 1 step -44
+
+read
+write
+
+loop
+eNDFor
+
+For aa13aa = 113 to 321 step 11
+
+read
+execute
+
+lOOp
+endfor
+
+for b1 = 3424 to 432 steP -2
+
+execute
+
+next
+
+for b5 = 1 to 350 steP 2
+read
+for b2b2b2b2 = 1434 to 333 steP -14
+execute
+
+endfor
+write
+endfor
+
+
+read
+execute
+
+
+for qw4qwe = 1 to 350 steP 2
+for qwtg4e = 1 to 3550
+read
+for a1 = 14 to 333 steP 14
+execute
+exit
+loop
+endfor
+write
+next
+loop
+endfor
