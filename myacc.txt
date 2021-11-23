@@ -1,0 +1,163 @@
+%union 
+{
+        int num;
+        char *str;
+}
+
+
+%token yFOR ySTEP yWHILE yLOOP yEXIT yENDFOR yNEXT yOPERATOREQ
+%token yCOMMA yPLUS yMINUS yMULTIPLY yDIVIDE yLEQ yGEQ yNEQ ySTR_EQ yEQUAL yLESS yGREATER 
+%token <str> yIDENTIFIER
+%token <num> yNUMBER 
+%token yAND yOR yNOT yOP yCP ySEMICOLON yANY
+
+%type <num> exp term
+
+%left yOR
+%left yAND
+%left yNOT
+%left yLESS yGREATER yLEQ yGEQ yNEQ ySTR_EQ yEQUAL
+%left yPLUS yMINUS
+%left yMULTIPLY yDIVIDE
+%precedence UMINUS
+
+
+%{
+#include <stdio.h>	
+#include <stdlib.h>
+#include "symbols.h"
+
+extern int pos;
+extern int yylineno;
+extern int err_cnt;
+
+extern int yylex(void);
+void yyerror(char *);
+void runtime_error(char *str);
+
+symbol_block *symtab = NULL;
+
+%}
+
+
+
+
+
+%%
+list:            
+                 | list stat ySEMICOLON
+                 | list stat error { yyerror("semicolon is missing"); }
+                 | list error ySEMICOLON { yyerror("wrong statement"); }
+
+stat:            yFOR var_name yOPERATOREQ initial_val yTO final_val ySTEP commands yEXIT yLOOP endfornext
+                 | yIDENTIFIER yEQUAL exp {
+                    /*printf("%s = %d\n", $1, $3);*/
+                    printf("expression value = %d\n", $3);
+                    symbol_assign(&symtab, $1, $3);
+                  }
+                 | yIDENTIFIER error exp { yyerror("assignment expected"); }
+                 ;
+
+endfornext: 	yENDFOR | 
+		yNEXT
+		;
+
+initial_val : 
+		|exp
+		;
+
+commands: 	
+		| READ
+		| yFOR
+		| yOPERATOR=
+		;
+		
+
+exp_list:        
+                 | exp                      { printf("expression value = %d\n", $1); }
+                 | exp_list yCOMMA exp      { printf("expression value = %d\n", $3); }
+                 ;
+
+lexp:            exp yLESS exp              { printf("left expression value = %d\nright expression value = %d\n", $1, $3); }
+                 | exp yGREATER exp         { printf("left expression value = %d\nright expression value = %d\n", $1, $3); }
+                 | exp yLEQ exp             { printf("left expression value = %d\nright expression value = %d\n", $1, $3); }
+                 | exp yGEQ exp             { printf("left expression value = %d\nright expression value = %d\n", $1, $3); }
+                 | exp yNEQ exp             { printf("left expression value = %d\nright expression value = %d\n", $1, $3); }
+                 | exp ySTR_EQ exp          { printf("left expression value = %d\nright expression value = %d\n", $1, $3); }
+                 | exp yEQUAL exp           { printf("left expression value = %d\nright expression value = %d\n", $1, $3); }
+                 | exp error exp            { yyerror("comparison sign is missing"); }
+                 | lexp yAND lexp
+                 | lexp yOR lexp
+                 | yNOT lexp
+                 | yOP lexp yCP
+                 ;
+
+exp:
+                 term
+                 | exp yPLUS exp            { $$ = $1 + $3;   }
+                 | exp yMINUS exp           { $$ = $1 - $3;   }
+                 | exp yMULTIPLY exp        { $$ = $1 * $3;   }
+                 | exp yDIVIDE exp {
+                    if ($3 == 0) {
+                        runtime_error("division by zero.");
+                    } else {
+                        $$ = $1 / $3;
+                    }
+                  }
+                 | yMINUS exp %prec UMINUS  { $$ = -$2;       }
+                 | yOP exp yCP              { $$ = $2;        }
+                 ;
+
+term: 
+                 yNUMBER                    { $$ = $1; }
+                 | yIDENTIFIER {
+                    int dst;
+                    if (symbol_get_value(&symtab, &dst, $1) == 1) {
+                        $$ = dst;
+                    } else {
+                        char msg[80];
+                        sprintf(msg, "unknown identifier %s", $1);
+                        runtime_error(msg);
+                        $$ = 9999999;
+                    }
+                  }
+                 ;
+
+
+
+
+
+
+to_exp:          
+                 | yTO var_list
+                 | yTO yARRAY yIDENTIFIER
+                 ;
+
+var_list:        yIDENTIFIER
+                 | var_list yCOMMA yIDENTIFIER
+                 ;
+
+optimize_exp:    
+                 | yNOOPTIMIZE
+                 ;
+
+
+%%
+
+int main(int argc, char **argv) {
+    yyparse();
+    if (err_cnt == 0) {
+        printf("Parsed successfully.\n");
+    } else {
+        printf("Parsed with %d errors.\n", err_cnt);
+    }
+}
+
+void yyerror(char *str) {
+	if (strcmp(str, "syntax error")) { printf("at line %d, position %d : syntax error: %s\n", yylineno, pos, str); err_cnt++; }
+}
+
+void runtime_error(char *str) {
+    printf("at line %d, position %d : runtime error: %s\n", yylineno, pos, str); err_cnt++;
+}
+
