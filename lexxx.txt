@@ -1,5 +1,6 @@
 %{
 #include <stdio.h>
+#include "y.tab.h"
 int yylval;
 int num, r, p;
 int character_number;
@@ -10,19 +11,16 @@ digit [0-9]
 tz [;]
 
 %%
-[Ee][Xx][Ii][Tt] 		{printf("\n exit \n");}
-[Ff][Oo][Rr] 			{printf("\n for \t");}
-[Ee][Nn][Dd][Ff][Oo][Rr] 		{printf("\n endfor \n");}
-[Ss][Tt][Ee][Pp] 		{printf("step \t");}
-[Tt][Oo] 			{printf("to \t");}
-[Ll][Oo][Oo][Pp] 		{printf("\n loop \t");}
-[Nn][Ee][Xx][Tt] 		{printf("\n next \n");}
-[Nn][Oo][Tt]			{printf("not \t");}
-[Aa][Nn][Dd]			{printf("operatror and \n");}
-[Oo][Rr]				{printf("operatror or \n");}
-[Ee][Xx][Ee][Cc][Uu][Tt][Ee]  	{printf("\n command(execute) \n");}
-[Rr][Ee][Aa][Dd]  		{printf("\n command(read) \n");}
-[Ww][Rr][Ii][Tt][Ee] 		{printf("\n command(write) \n");}
+[Ee][Xx][Ii][Tt] 		{printf("\n exit \n"); return yEXIT;}
+[Ff][Oo][Rr] 			{printf("\n for \t"); return yFOR;}
+[Ee][Nn][Dd][Ff][Oo][Rr] 		{printf("\n endfor \n"); return yENDFOR;}
+[Ss][Tt][Ee][Pp] 		{printf("step \t"); return ySTEP;}
+[Tt][Oo] 			{printf("to \t"); return yTO;}
+[Ll][Oo][Oo][Pp] 		{printf("\n loop \t"); return yLOOP;}
+[Nn][Ee][Xx][Tt] 		{printf("\n next \n"); return yNEXT;}
+[Ee][Xx][Ee][Cc][Uu][Tt][Ee]  	{printf("\n command(execute) \n"); return yEXECUTE;}
+[Rr][Ee][Aa][Dd]  		{printf("\n command(read) \n"); return yREAD;}
+[Ww][Rr][Ii][Tt][Ee] 		{printf("\n command(write) \n"); return yWRITE;}
 (0|[1-9][0-9]*)          {  
                           character_number = character_number + yyleng;
                           printf("number \t");
@@ -32,27 +30,22 @@ tz [;]
                               yylval = yylval * 10 + (yytext[i]-'0');
                            }
                            printf("%d \t", yylval);
-                                                     }
+                                                     return yNUMBER;}
 
-({letter}({letter}|{digit})*)    {printf(" varname\t");}
+({letter}({letter}|{digit})*)    {printf(" varname\t"); return yVARNAME;}
 
-";"			{printf("; \n");}
-"="			{printf("operatror= \t");}
-">="			{printf("operatror>= \t");}
-"<="			{printf("operatror<= \t");}
-"!="			{printf("operatror!= \t");}
-"+"			{printf("operatror+ \t");}
-"-"			{printf("operatror- \t");}
-"/"			{printf("operatror/ \t");}
-"*"			{printf("operatror* \t");}
-"|" 			{printf("| \n");}
+";"			{printf("; \n"); return ySEMICOLON;}
+"="			{printf("operatror= \t"); return yEQ;}
+"+"			{printf("operatror+ \t"); return yPLUS;}
+"-"			{printf("operatror- \t"); return yMINUS;}
+"/"			{printf("operatror/ \t"); return yDIVIDE;}
+"*"			{printf("operatror* \t"); return yMULT;}
 [ \t]+                                   ;
 \n 			/*return('\n')*/;
 . 			/*return(yytext[0])*/;
 
 %%
-    
-int main(){
-    
+   
+int main(){    
     return yylex();
 }
