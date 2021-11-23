@@ -1,0 +1,58 @@
+%{
+#include <stdio.h>
+int yylval;
+int num, r, p;
+int character_number;
+%}
+
+letter [A-Za-z]
+digit [0-9]
+tz [;]
+
+%%
+[Ee][Xx][Ii][Tt] 		{printf("\n exit \n");}
+[Ff][Oo][Rr] 			{printf("\n for \t");}
+[Ee][Nn][Dd][Ff][Oo][Rr] 		{printf("\n endfor \n");}
+[Ss][Tt][Ee][Pp] 		{printf("step \t");}
+[Tt][Oo] 			{printf("to \t");}
+[Ll][Oo][Oo][Pp] 		{printf("\n loop \t");}
+[Nn][Ee][Xx][Tt] 		{printf("\n next \n");}
+[Nn][Oo][Tt]			{printf("not \t");}
+[Aa][Nn][Dd]			{printf("operatror and \n");}
+[Oo][Rr]				{printf("operatror or \n");}
+[Ee][Xx][Ee][Cc][Uu][Tt][Ee]  	{printf("\n command(execute) \n");}
+[Rr][Ee][Aa][Dd]  		{printf("\n command(read) \n");}
+[Ww][Rr][Ii][Tt][Ee] 		{printf("\n command(write) \n");}
+(0|[1-9][0-9]*)          {  
+                          character_number = character_number + yyleng;
+                          printf("number \t");
+                          yylval = yytext[0]-'0';
+
+                          for (int i  = 1; i < yyleng; i++){
+                              yylval = yylval * 10 + (yytext[i]-'0');
+                           }
+                           printf("%d \t", yylval);
+                                                     }
+
+({letter}({letter}|{digit})*)    {printf(" varname\t");}
+
+";"			{printf("; \n");}
+"="			{printf("operatror= \t");}
+">="			{printf("operatror>= \t");}
+"<="			{printf("operatror<= \t");}
+"!="			{printf("operatror!= \t");}
+"+"			{printf("operatror+ \t");}
+"-"			{printf("operatror- \t");}
+"/"			{printf("operatror/ \t");}
+"*"			{printf("operatror* \t");}
+"|" 			{printf("| \n");}
+[ \t]+                                   ;
+\n 			/*return('\n')*/;
+. 			/*return(yytext[0])*/;
+
+%%
+    
+int main(){
+    
+    return yylex();
+}
