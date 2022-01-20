@@ -1,0 +1,184 @@
+For aaaaa = 1 to 10 step 1 read; execute; write; exit loop endfor;
+
+vova = 5;
+
+vova = vova + 5;
+
+aboba = vova * vova;
+
+write;
+
+For a334 = 1 to 103 read; execute; write; exit endfor;
+
+fOr aa3aa = vova to 1 step -44 read; write; loop eNDFor;
+
+For aa13aa = 113 to 321 step 11 read; execute; lOOp endfor;
+
+for b1 = 3424 to 432 steP -2 execute; next;
+
+for b5 = 1 to 350 steP 2 read; for b2b2b2b2 = 1434 to 333 steP -14 execute; endfor; write; endfor;
+
+read;
+
+execute;
+
+for qw4qwe = 1 to 350 steP 2 for qwtg4e = 1 to 3550 read; for a1 = 14 to 333 steP 14 execute; exit loop endfor; write; next; loop endfor;
+
+i=5 to 6 sTeP 10 write; next;
+
+for =10 to 3 -1 endfor;
+
+for i=1 to 200 STEP 20 for i=100 to 2001 step 1 write; exit endfor;
+FOR FOR i=1 to 200 STEP 20 EXIT Next;
+
+READ
+
+eXeCute
+
+flor u=1 to 200 loop next;
+
+for u=1 to 200 exit next; endfor;
+
+NewPeremennaya=(100*100)+500-(20*5)+a*2-36/9+(200*5+(10+p*5*a*c*(a+b)));
+
+@+?;
+
+++++++;
+
+------;
+
+-+-+-+;
+
+???++++???;;
+
+NewNewNewPeremennaya200000=NewPeremennaya + a;
+
+a=5;
+
+b=100;
+
+S=10;
+
+a=a+b;
+
+200+200,300+500,1+200;
+
+c=a+a;
+
+100*200;
+
+newVar1=a*b;
+
+newVar2=newVar1*a;
+
+asdasd+5;
+
+addas == a+a;
+
+'a'='sdada';
+
+200+200,300+500,1+200;
+
+a+0;
+
+a++b;
+
+newa = a++b;
+
+newb = a-b;
+
+newnewb = a--b;
+
+newnewa = a--;
+
+newnewa = a++;
+
+for i = 10 to 100 10 a=a+100; write; next;
+
+for i=1000 to 5 STEP -1 a=a--; endfor;
+
+for step 10 write; read; next;
+
+for i=a=10+10 to 1000 10 execute; next;
+
+for i=10 to a=10*1000 step=10 execute; next;
+
+for i=10*10*10-10+100 to 10*1000/1*200 step 10 read; next; endfore;
+
+100/0;
+
+1000**10;
+
+10++;
+
+10--;
+
+for ghoul=1000 to 0 -7 ghoul = 1000; endfor;
+
+FOR IIIII1232=1010 TO 320 -320 IIIIIIIIII=10 endfor;
+
+a=1000/0;
+
+b=a+2;
+
+a=sfasfasdf+aflaflaf;
+
+for i=asdasdasdas to 1000 step 10 execute; next;
+
+a1, b1, c1, d1;
+
+a1 b1 c1 d1;
+
+a1 = b1 + c1 / d1;
+
+a1 = a2+b1;
+
+fOr aa3aa = 1213 to 1 step -44 read; write; loop eNDFor;
+
+for i=1 to 5 step 1 read; next;
+
+for i=1 to 5 step 1 read(); next;
+
+newVar1=a*b;
+
+newVar2=newVar1*a;
+
+pog=0; lul=10; monkaS=1; for pog to lul step monkaS next;
+
+a=0;b=100;c=b/a;
+
+i=100 to 1000 read; next;
+
+i=1000 10 -1 read; endfor;
+
+for endfor;
+
+for execute; endfore;
+
+for i=lewis to 1000 10 next;
+
+lewis=10; for i=lewis to max step 10 read;write;execute;next;
+
+lewis=100; max=1000; for i=lewis to max step 10 read;write;execute;next;
+
+fоr i=100 to 0 -1 write;read;exit loop endfor;
+
+a=sfasfasdf+aflaflaf;
+
+=====;
+
+for i=10*10*10-10+100 to 10*1000/1*200 step 10 read; next; endfore;
+
+for &=10 to 11 1 next;
+
+for i=10 to 11 1 exit loop next;
+
+for u=10 to 1132131 1 $=10; endfor;
+
+FOR u=10 TO 1132131 STEP 1 newvar=10 endfor;
+
+zero=0; FOR u=10 TO 1132131 STEP 1 newvar=10/zero; endfor;
+
+FOR u=10 TO 1132131 STEP 1 zero=0; newvar=10/zero; endfor;
+
+

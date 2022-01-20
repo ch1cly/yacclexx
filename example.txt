@@ -1,0 +1,75 @@
+программа лишь анализирует, но не исполняет код. 
+Попытки сделать так, чтобы исполняли лежат в файлах scope for var. 
+variable.h. рабочий файл
+cd /lex
+flex lexxxv1.txt
+gcc -ll lex.yy.c
+cat input.txt | a.out > result.txt
+
+yacc -vd 4321.y
+flex 1234.l
+gcc var.c scope.c for.c y.tab.c lex.yy.c -ly -ll
+
+cat input1.txt | /a.out > result1.txt
+cat input_1.txt | /a.out > result1.txt
+
+
+yacc -vd 4321.y
+flex 1234.l
+gcc variables.c y.tab.c lex.yy.c -ly -ll
+./a.out
+
+Выполняет группу команд заданное число раз.
+
+Синтаксис:
+
+FOR MemVarName = nInitialValue TO nFinalValue [STEP nIncrement] 
+	Commands
+	[EXIT]
+	[LOOP]
+ENDFOR | NEXT
+Параметры:
+MemVarName
+Задает переменную памяти или элемент массива, выступающий в роли счетчика. Эта переменная или элемент массива могут и не существовать до выполнения цикла FOR ... ENDFOR.
+nInitialValue TO nFinalValue
+nInitialValue начальное значение счетчика, а nFinalValue его конечное значение.
+STEP nIncrement
+nIncrement величина приращения счетчика. Если значение nIncrement отрицательно, счетчик будет уменьшаться. Если предложение STEP опущено, счетчик будет увеличиваться на 1.
+Commands
+Задает команды Visual FoxPro, которые нужно выполнять. Аргумент Commands может включать любое число команд.
+EXIT
+Передает управление из цикла FOR ... ENDFOR команде, непосредственно следующей за оператором ENDFOR. Можно поставить EXIT в любом месте между FOR и ENDFOR.
+LOOP
+Возвращает управление непосредственно предложению FOR, не выполняя операторы, расположенные между LOOP и ENDFOR. Счетчик увеличивается или уменьшается, как если бы был достигнут оператор ENDFOR. Можно поставить LOOP в любом месте между FOR и ENDFOR.
+
+Комментарии:
+Переменная памяти или элемент массива используются в качестве счетчика, который задает количество выполнений для команд Visual FoxPro, входящих в тело цикла FOR ... ENDFOR.
+Команды Visual FoxPro, идущие после FOR, выполняются одна за другой, пока не встретится оператор ENDFOR или NEXT. После этого к счетчику MemVarName прибавляется значение nIncrement. Если предложение STEP опущено, счетчик увеличивается на 1. После этого он сравнивается с величиной nFinalValue. Если значение счетчика меньше или равно nFinalValue, то команды, следующие за предложением FOR, выполняются вновь. Если значение счетчика больше, чем nFinalValue, осуществляется выход из цикла FOR ... ENDFOR и выполнение программы продолжается с первой команды, следующей за ENDFOR или NEXT.
+Замечание. Значения аргументов nInitialValue, nFinalValue и nIncrement считываются только в самом начале. Однако изменение значения счетчика MemVarName внутри цикла влияет на число выполнений цикла.
+Если значение приращения nIncrement отрицательно и начальное значение nInitialValue больше конечного значения nFinalValue, счетчик при каждом прохождении цикла будет уменьшатся.
+
+Пример:
+
+* В первом примере выполняется отображение на экране чисел от 1 до 10.
+* Во втором примере начальное и конечное значения и приращение
+* определены переменными памяти; в цикле на экран выводятся все
+* записи таблицы customer с четными номерами, со второй по десятую.
+* Example 1
+
+CLEAR
+FOR gnCount = 1 TO 10
+	? gnCount
+ENDFOR
+
+* Example 2
+SET TALK OFF
+CLOSE DATABASES
+OPEN DATABASE (HOME( ) + 'samples\data\testdata')
+USE customer	&& Opens Customer table
+STORE 2 TO gnI	&& Initial value
+STORE 10 TO gnJ	&& Final value
+STORE 2 TO K	&& Step value
+FOR gnCount = gnI TO gnJ STEP K
+	GOTO gnCount	&& Move record pointer
+	DISPLAY company	&& Display company name
+ENDFOR

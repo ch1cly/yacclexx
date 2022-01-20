@@ -1,0 +1,533 @@
+for  varname EQ number 1 to aaaaa = 1
+number 10 step = number 1 command(read)
+SEMICOLON
+command(execute)
+SEMICOLON
+command(write) 
+SEMICOLON
+exit 
+loop
+endfor 
+for ended!
+SEMICOLON
+ varname EQ number 5 SEMICOLON
+vova = 5
+ varname EQ  varname PLUS number 5 SEMICOLON
+vova = 10
+ varname EQ  varname MULT  varname SEMICOLON
+aboba = 100
+command(write) 
+SEMICOLON
+for  varname EQ number 1 to a334 = 1
+number 103 command(read)
+SEMICOLON
+command(execute)
+SEMICOLON
+command(write) 
+SEMICOLON
+exit 
+endfor 
+for ended!
+SEMICOLON
+for  varname EQ number 1213 to aa3aa = 1213
+number 1 step = MINUS number 44 command(read)
+SEMICOLON
+command(write) 
+SEMICOLON
+loop
+endfor 
+for ended!
+SEMICOLON
+for  varname EQ number 113 to aa13aa = 113
+number 321 step = number 11 command(read)
+SEMICOLON
+command(execute)
+SEMICOLON
+loop
+endfor 
+for ended!
+SEMICOLON
+for  varname EQ number 3424 to b1 = 3424
+number 432 step = MINUS number 2 command(execute)
+SEMICOLON
+next
+for ended!
+SEMICOLON
+for  varname EQ number 1 to b5 = 1
+number 350 step = number 2 command(read)
+SEMICOLON
+for  varname EQ number 1434 to b2b2b2b2 = 1434
+number 333 step = MINUS number 14 command(execute)
+SEMICOLON
+endfor 
+for ended!
+SEMICOLON
+command(write) 
+SEMICOLON
+endfor 
+for ended!
+SEMICOLON
+command(read)
+SEMICOLON
+command(execute)
+SEMICOLON
+for  varname EQ number 1 to qw4qwe = 1
+number 350 step = number 2 for  varname EQ number 1 to qwtg4e = 1
+number 3550 command(read)
+SEMICOLON
+for  varname EQ number 14 to a1 = 14
+number 333 step = number 14 command(execute)
+SEMICOLON
+exit 
+loop
+endfor 
+for ended!
+SEMICOLON
+command(write) 
+SEMICOLON
+next
+for ended!
+SEMICOLON
+loop
+endfor 
+for ended!
+SEMICOLON
+ varname EQ number 5 to i = 5
+semicolon is missing
+number 6 step = number 10 command(write) 
+SEMICOLON
+syntax error
+next
+SEMICOLON
+syntax error
+for EQ number 10 to number 3 MINUS number 1 endfor 
+SEMICOLON
+syntax error
+for  varname EQ number 1 to i = 1
+number 200 step = number 20 for  varname EQ number 100 to i = 100
+number 2001 step = number 1 command(write) 
+SEMICOLON
+exit 
+endfor 
+for ended!
+SEMICOLON
+for for  varname EQ number 1 to i = 1
+number 200 step = number 20 exit 
+next
+for is missing!
+SEMICOLON
+command(read)
+command(execute)
+semicolon is missing
+ varname semicolon is missing
+ varname at line 38, position 6 : syntax error: = is missing
+
+semicolon is missing
+EQ number 1 to number 200 loop
+next
+SEMICOLON
+syntax error
+for  varname EQ number 1 to u = 1
+number 200 exit 
+next
+for ended!
+SEMICOLON
+endfor 
+for ended!
+SEMICOLON
+ varname EQ at line 42, position 16 : lexical error: unknown character '('
+number 100 MULT number 100 at line 42, position 24 : lexical error: unknown character ')'
+PLUS number 500 MINUS at line 42, position 30 : lexical error: unknown character '('
+number 20 MULT number 5 at line 42, position 35 : lexical error: unknown character ')'
+PLUS  varname at line 42, position 37 : runtime error: unknown varname a
+MULT number 2 MINUS number 36 DIVIDE number 9 PLUS at line 42, position 46 : lexical error: unknown character '('
+number 200 MULT number 5 PLUS at line 42, position 53 : lexical error: unknown character '('
+number 10 PLUS  varname at line 42, position 57 : runtime error: unknown varname p
+MULT number 5 MULT  varname at line 42, position 61 : runtime error: unknown varname a
+MULT  varname at line 42, position 63 : runtime error: unknown varname c
+MULT at line 42, position 65 : lexical error: unknown character '('
+ varname at line 42, position 66 : runtime error: unknown varname a
+PLUS  varname at line 42, position 68 : runtime error: unknown varname b
+at line 42, position 69 : lexical error: unknown character ')'
+at line 42, position 70 : lexical error: unknown character ')'
+at line 42, position 71 : lexical error: unknown character ')'
+SEMICOLON
+NewPeremennaya = -215945298
+at line 44, position 1 : lexical error: unknown character '@'
+PLUS at line 44, position 3 : lexical error: unknown character '?'
+SEMICOLON
+syntax error
+PLUS PLUS PLUS PLUS PLUS PLUS SEMICOLON
+syntax error
+MINUS MINUS MINUS MINUS MINUS MINUS SEMICOLON
+syntax error
+MINUS PLUS MINUS PLUS MINUS PLUS SEMICOLON
+syntax error
+at line 52, position 1 : lexical error: unknown character '?'
+at line 52, position 2 : lexical error: unknown character '?'
+at line 52, position 3 : lexical error: unknown character '?'
+PLUS PLUS PLUS PLUS at line 52, position 8 : lexical error: unknown character '?'
+at line 52, position 9 : lexical error: unknown character '?'
+at line 52, position 10 : lexical error: unknown character '?'
+SEMICOLON
+syntax error
+SEMICOLON
+syntax error
+ varname EQ  varname PLUS  varname at line 54, position 45 : runtime error: unknown varname a
+SEMICOLON
+NewNewNewPeremennaya200000 = -1813958306
+ varname EQ number 5 SEMICOLON
+a = 5
+ varname EQ number 100 SEMICOLON
+b = 100
+ varname EQ number 10 SEMICOLON
+S = 10
+ varname EQ  varname PLUS  varname SEMICOLON
+a = 105
+number 200 PLUS number 200 at line 64, position 8 : lexical error: unknown character ','
+number 300 PLUS number 500 at line 64, position 16 : lexical error: unknown character ','
+number 1 PLUS number 200 SEMICOLON
+syntax error
+ varname EQ  varname PLUS  varname SEMICOLON
+c = 210
+number 100 MULT number 200 SEMICOLON
+syntax error
+ varname EQ  varname MULT  varname SEMICOLON
+newVar1 = 10500
+ varname EQ  varname MULT  varname SEMICOLON
+newVar2 = 1102500
+ varname PLUS at line 74, position 7 : syntax error: = is missing
+
+semicolon is missing
+number 5 SEMICOLON
+syntax error
+ varname EQ EQ at line 76, position 8 : syntax error: value of variable is missing
+
+semicolon is missing
+ varname PLUS at line 76, position 11 : syntax error: = is missing
+
+semicolon is missing
+ varname SEMICOLON
+at line 76, position 13 : syntax error: = is missing
+
+at line 78, position 1 : lexical error: unknown character '''
+ varname at line 78, position 3 : lexical error: unknown character '''
+EQ at line 78, position 5 : lexical error: unknown character '''
+ varname at line 78, position 10 : runtime error: unknown varname sdada
+at line 78, position 11 : lexical error: unknown character '''
+SEMICOLON
+a = -1598011760
+number 200 PLUS number 200 at line 80, position 8 : lexical error: unknown character ','
+number 300 PLUS number 500 at line 80, position 16 : lexical error: unknown character ','
+number 1 PLUS number 200 SEMICOLON
+syntax error
+ varname PLUS at line 82, position 2 : syntax error: = is missing
+
+semicolon is missing
+number 0 SEMICOLON
+syntax error
+ varname PLUS at line 84, position 2 : syntax error: = is missing
+
+semicolon is missing
+PLUS  varname SEMICOLON
+at line 84, position 5 : syntax error: = is missing
+
+ varname EQ  varname PLUS PLUS at line 86, position 10 : syntax error: value of variable is missing
+
+ varname SEMICOLON
+at line 86, position 12 : syntax error: = is missing
+
+ varname EQ  varname MINUS  varname SEMICOLON
+newb = -1598011860
+syntax error
+ varname EQ  varname MINUS MINUS  varname SEMICOLON
+newnewb = -1598011660
+ varname EQ  varname MINUS MINUS SEMICOLON
+at line 92, position 14 : syntax error: value of variable is missing
+
+ varname EQ  varname PLUS PLUS at line 94, position 13 : syntax error: value of variable is missing
+
+semicolon is missing
+SEMICOLON
+for  varname EQ number 10 to i = 10
+number 100 number 10  varname EQ  varname PLUS number 100 SEMICOLON
+a = -1598011660
+syntax error
+command(write) 
+SEMICOLON
+next
+for is missing!
+SEMICOLON
+for  varname EQ number 1000 to i = 1000
+number 5 step = MINUS number 1  varname EQ  varname MINUS MINUS SEMICOLON
+at line 98, position 30 : syntax error: value of variable is missing
+
+endfor 
+for ended!
+SEMICOLON
+for step = number 10 command(write) 
+SEMICOLON
+syntax error
+command(read)
+SEMICOLON
+next
+SEMICOLON
+syntax error
+for  varname EQ  varname EQ i = -1598011660
+number 10 PLUS number 10 to number 1000 number 10 command(execute)
+SEMICOLON
+syntax error
+next
+to is missing!
+SEMICOLON
+for  varname EQ number 10 to i = 10
+ varname EQ number 10 MULT number 1000 step = EQ number 10 command(execute)
+SEMICOLON
+syntax error
+next
+for ended!
+SEMICOLON
+for  varname EQ number 10 MULT number 10 MULT number 10 MINUS number 10 PLUS number 100 to i = 1090
+number 10 MULT number 1000 DIVIDE number 1 MULT number 200 step = number 10 command(read)
+SEMICOLON
+next
+for ended!
+SEMICOLON
+ varname SEMICOLON
+at line 106, position 67 : syntax error: = is missing
+
+number 100 DIVIDE number 0 SEMICOLON
+syntax error
+number 1000 MULT MULT number 10 SEMICOLON
+syntax error
+number 10 PLUS PLUS SEMICOLON
+syntax error
+number 10 MINUS MINUS SEMICOLON
+syntax error
+for  varname EQ number 1000 to ghoul = 1000
+number 0 MINUS number 7  varname EQ number 1000 SEMICOLON
+ghoul = 1000
+endfor 
+for ended!
+SEMICOLON
+for  varname EQ number 1010 to IIIII1232 = 1010
+number 320 MINUS number 320  varname EQ number 10 endfor 
+IIIIIIIIII = 10
+semicolon is missing
+for ended!
+SEMICOLON
+ varname EQ number 1000 DIVIDE number 0 at line 120, position 8 : runtime error: division by zero.
+SEMICOLON
+a = 1000
+ varname EQ  varname PLUS number 2 SEMICOLON
+b = 1002
+ varname EQ  varname at line 124, position 11 : runtime error: unknown varname sfasfasdf
+PLUS  varname at line 124, position 20 : runtime error: unknown varname aflaflaf
+SEMICOLON
+a = 1098945456
+for  varname EQ  varname at line 126, position 17 : runtime error: unknown varname asdasdasdas
+to i = -1598010880
+number 1000 step = number 10 command(execute)
+SEMICOLON
+next
+for ended!
+SEMICOLON
+ varname at line 128, position 3 : lexical error: unknown character ','
+ varname at line 128, position 6 : syntax error: = is missing
+
+semicolon is missing
+at line 128, position 7 : lexical error: unknown character ','
+ varname at line 128, position 11 : lexical error: unknown character ','
+ varname at line 128, position 14 : syntax error: = is missing
+
+semicolon is missing
+SEMICOLON
+ varname  varname at line 130, position 5 : syntax error: = is missing
+
+ varname  varname at line 130, position 11 : syntax error: = is missing
+
+SEMICOLON
+syntax error
+ varname EQ  varname PLUS  varname at line 132, position 12 : runtime error: unknown varname c1
+DIVIDE  varname at line 132, position 17 : runtime error: unknown varname d1
+SEMICOLON
+a1 = 3425
+ varname EQ  varname at line 134, position 7 : runtime error: unknown varname a2
+PLUS  varname SEMICOLON
+a1 = -1598007232
+for  varname EQ number 1213 to aa3aa = 1213
+number 1 step = MINUS number 44 command(read)
+SEMICOLON
+command(write) 
+SEMICOLON
+loop
+endfor 
+for ended!
+SEMICOLON
+for  varname EQ number 1 to i = 1
+number 5 step = number 1 command(read)
+SEMICOLON
+next
+for ended!
+SEMICOLON
+for  varname EQ number 1 to i = 1
+number 5 step = number 1 command(read)
+at line 140, position 25 : lexical error: unknown character '('
+at line 140, position 26 : lexical error: unknown character ')'
+SEMICOLON
+next
+for ended!
+SEMICOLON
+ varname EQ  varname MULT  varname SEMICOLON
+newVar1 = 1631719136
+ varname EQ  varname MULT  varname SEMICOLON
+newVar2 = 469031424
+ varname EQ number 0 SEMICOLON
+pog = 0
+ varname EQ number 10 SEMICOLON
+lul = 10
+ varname EQ number 1 SEMICOLON
+monkaS = 1
+for  varname to at line 146, position 35 : syntax error: = is missing
+
+ varname step =  varname next
+for ended!
+SEMICOLON
+ varname EQ number 0 SEMICOLON
+a = 0
+ varname EQ number 100 SEMICOLON
+b = 100
+ varname EQ  varname DIVIDE  varname at line 148, position 15 : runtime error: division by zero.
+SEMICOLON
+c = 100
+ varname EQ number 100 to i = 100
+semicolon is missing
+number 1000 command(read)
+SEMICOLON
+syntax error
+next
+SEMICOLON
+syntax error
+ varname EQ number 1000 number 10 i = 1000
+semicolon is missing
+MINUS number 1 command(read)
+SEMICOLON
+syntax error
+endfor 
+SEMICOLON
+syntax error
+for endfor 
+SEMICOLON
+syntax error
+for command(execute)
+SEMICOLON
+syntax error
+ varname SEMICOLON
+at line 156, position 21 : syntax error: = is missing
+
+for  varname EQ  varname at line 158, position 11 : runtime error: unknown varname lewis
+to i = -1598010096
+number 1000 number 10 next
+SEMICOLON
+syntax error
+ varname EQ number 10 SEMICOLON
+lewis = 10
+for  varname EQ  varname to i = 10
+ varname at line 160, position 28 : runtime error: unknown varname max
+step = number 10 command(read)
+SEMICOLON
+command(write) 
+SEMICOLON
+command(execute)
+SEMICOLON
+next
+for ended!
+SEMICOLON
+ varname EQ number 100 SEMICOLON
+lewis = 100
+ varname EQ number 1000 SEMICOLON
+max = 1000
+for  varname EQ  varname to i = 100
+ varname step = number 10 command(read)
+SEMICOLON
+command(write) 
+SEMICOLON
+command(execute)
+SEMICOLON
+next
+for ended!
+SEMICOLON
+ varname at line 164, position 2 : lexical error: unknown character 'Ð'
+at line 164, position 3 : lexical error: unknown character '¾'
+ varname at line 164, position 4 : syntax error: = is missing
+
+semicolon is missing
+ varname EQ number 100 to i = 100
+semicolon is missing
+number 0 MINUS number 1 command(write) 
+SEMICOLON
+syntax error
+command(read)
+SEMICOLON
+exit 
+loop
+endfor 
+for ended!
+SEMICOLON
+ varname EQ  varname at line 166, position 11 : runtime error: unknown varname sfasfasdf
+PLUS  varname at line 166, position 20 : runtime error: unknown varname aflaflaf
+SEMICOLON
+a = 1098948912
+EQ EQ EQ EQ EQ SEMICOLON
+syntax error
+for  varname EQ number 10 MULT number 10 MULT number 10 MINUS number 10 PLUS number 100 to i = 1090
+number 10 MULT number 1000 DIVIDE number 1 MULT number 200 step = number 10 command(read)
+SEMICOLON
+next
+for ended!
+SEMICOLON
+ varname SEMICOLON
+at line 170, position 67 : syntax error: = is missing
+
+for at line 172, position 5 : lexical error: unknown character '&'
+EQ number 10 to number 11 number 1 next
+SEMICOLON
+syntax error
+for  varname EQ number 10 to i = 10
+number 11 number 1 exit 
+loop
+next
+SEMICOLON
+syntax error
+for  varname EQ number 10 to u = 10
+number 1132131 number 1 at line 176, position 23 : lexical error: unknown character '$'
+EQ number 10 SEMICOLON
+syntax error
+endfor 
+for ended!
+SEMICOLON
+for  varname EQ number 10 to u = 10
+number 1132131 step = number 1  varname EQ number 10 endfor 
+newvar = 10
+semicolon is missing
+for ended!
+SEMICOLON
+ varname EQ number 0 SEMICOLON
+zero = 0
+for  varname EQ number 10 to u = 10
+number 1132131 step = number 1  varname EQ number 10 DIVIDE  varname at line 180, position 49 : runtime error: division by zero.
+SEMICOLON
+newvar = 10
+endfor 
+for ended!
+SEMICOLON
+for  varname EQ number 10 to u = 10
+number 1132131 step = number 1  varname EQ number 0 SEMICOLON
+zero = 0
+ varname EQ number 10 DIVIDE  varname at line 182, position 49 : runtime error: division by zero.
+SEMICOLON
+newvar = 10
+endfor 
+for ended!
+SEMICOLON
+Parsed with 79 errors.
